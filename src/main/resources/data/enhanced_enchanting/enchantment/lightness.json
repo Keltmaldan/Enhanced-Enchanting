@@ -1,0 +1,35 @@
+{
+  "description": {
+    "translate": "enchantment.enhanced_enchanting.lightness"
+  },
+  "supported_items": "#minecraft:enchantable/weapon",
+  "weight": 10,
+  "max_level": 5,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 6,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 2,
+  "slots": [
+    "mainhand"
+  ],
+  "exclusive_set": "#minecraft:damage",
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.5,
+          "per_level_above_first": 0.125
+        },
+        "attribute": "minecraft:generic.attack_speed",
+        "id": "enhanced_enchanting:enchantment.lightness",
+        "operation": "add_multiplied_base"
+      }
+    ]
+  }
+}

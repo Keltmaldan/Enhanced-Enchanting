@@ -1,0 +1,24 @@
+{
+  "description": {
+    "translate": "enchantment.enhanced_enchanting.cold_focus"
+  },
+  "supported_items": "#minecraft:enchantable/armor",
+  "weight": 5,
+  "max_level": 4,
+  "min_cost": {
+    "base": 25,
+    "per_level_above_first": 15
+  },
+  "max_cost": {
+    "base": 35,
+    "per_level_above_first": 15
+  },
+  "anvil_cost": 5,
+  "slots": [
+    "armor"
+  ],
+  "exclusive_set": [
+    "enhanced_enchanting:fire_focus",
+    "enhanced_enchanting:poison_focus"
+  ]
+}

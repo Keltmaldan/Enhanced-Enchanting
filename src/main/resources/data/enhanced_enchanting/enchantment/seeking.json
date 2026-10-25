@@ -1,0 +1,21 @@
+{
+  "description": {
+    "translate": "enchantment.enhanced_enchanting.seeking"
+  },
+  "supported_items": "#minecraft:enchantable/distance",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 63,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 75,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 15,
+  "slots": [
+    "mainhand"
+  ],
+  "exclusive_set": []
+}

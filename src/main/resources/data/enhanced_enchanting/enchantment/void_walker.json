@@ -1,0 +1,21 @@
+{
+  "description": {
+    "translate": "enchantment.enhanced_enchanting.void_walker"
+  },
+  "supported_items": "#minecraft:enchantable/foot_armor",
+  "weight": 2,
+  "max_level": 1,
+  "min_cost": {
+    "base": 35,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 64,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 6,
+  "slots": [
+    "feet"
+  ],
+  "exclusive_set": []
+}
