@@ -104,6 +104,7 @@ public class EnhancedEnchantingModVariables {
 		clone.poison_focus_do = original.poison_focus_do;
 		clone.cold_focus_power = original.cold_focus_power;
 		clone.cold_damages_upgrade = original.cold_damages_upgrade;
+		clone.rollers_active = original.rollers_active;
 		clone.gravity_reverse = original.gravity_reverse;
 		if (!event.isWasDeath()) {
 			clone.snowball_angle = original.snowball_angle;
@@ -119,7 +120,6 @@ public class EnhancedEnchantingModVariables {
 			clone.head_shot_strenght = original.head_shot_strenght;
 			clone.wind_arrow_level = original.wind_arrow_level;
 			clone.fire_trail = original.fire_trail;
-			clone.rollers_active = original.rollers_active;
 			clone.enchantmentRemoverCooldown = original.enchantmentRemoverCooldown;
 			clone.seeking = original.seeking;
 		}
