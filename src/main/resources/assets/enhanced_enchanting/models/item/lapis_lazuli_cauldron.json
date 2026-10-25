@@ -1,7 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "enhanced_enchanting:item/lapis_lazuli_cauldron"
-  },
-  "render_type": "translucent"
-}

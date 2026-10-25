@@ -1,6 +1,0 @@
-{
-  "exhaustion": 0.1,
-  "message_id": "too_much_damages_kept",
-  "scaling": "always",
-  "effects": "burning"
-}
