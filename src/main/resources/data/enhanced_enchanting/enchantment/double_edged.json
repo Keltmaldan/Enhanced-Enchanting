@@ -1,0 +1,21 @@
+{
+  "description": {
+    "translate": "enchantment.enhanced_enchanting.double_edged"
+  },
+  "supported_items": "#minecraft:enchantable/sword",
+  "weight": 3,
+  "max_level": 3,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 6,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 3,
+  "slots": [
+    "mainhand"
+  ],
+  "exclusive_set": []
+}

@@ -1,0 +1,35 @@
+{
+  "description": {
+    "translate": "enchantment.enhanced_enchanting.climber"
+  },
+  "supported_items": "#minecraft:enchantable/foot_armor",
+  "weight": 5,
+  "max_level": 2,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 6,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 3,
+  "slots": [
+    "feet"
+  ],
+  "exclusive_set": [],
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.5,
+          "per_level_above_first": 0.15
+        },
+        "attribute": "minecraft:generic.step_height",
+        "id": "enhanced_enchanting:enchantment.climber",
+        "operation": "add_value"
+      }
+    ]
+  }
+}

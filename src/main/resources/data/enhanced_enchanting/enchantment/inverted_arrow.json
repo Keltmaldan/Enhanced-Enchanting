@@ -1,0 +1,21 @@
+{
+  "description": {
+    "translate": "enchantment.enhanced_enchanting.inverted_arrow"
+  },
+  "supported_items": "#minecraft:enchantable/distance",
+  "weight": 2,
+  "max_level": 1,
+  "min_cost": {
+    "base": 25,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 60,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 1,
+  "slots": [
+    "mainhand"
+  ],
+  "exclusive_set": []
+}

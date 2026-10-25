@@ -1,0 +1,21 @@
+{
+  "description": {
+    "translate": "enchantment.enhanced_enchanting.sorcery"
+  },
+  "supported_items": "#minecraft:enchantable/weapon",
+  "weight": 5,
+  "max_level": 3,
+  "min_cost": {
+    "base": 15,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 24,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 3,
+  "slots": [
+    "mainhand"
+  ],
+  "exclusive_set": []
+}

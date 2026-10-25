@@ -1,0 +1,26 @@
+{
+  "description": {
+    "translate": "enchantment.enhanced_enchanting.vein_miner"
+  },
+  "supported_items": "#minecraft:pickaxes",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 50,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 75,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 15,
+  "slots": [
+    "mainhand"
+  ],
+  "exclusive_set": [
+    "fortune",
+    "enhanced_enchanting:auto_smelt",
+    "silk_touch",
+    "enhanced_enchanting:big_hole"
+  ]
+}

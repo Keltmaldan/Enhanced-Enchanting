@@ -1,0 +1,31 @@
+{
+  "description": {
+    "translate": "enchantment.enhanced_enchanting.rapid_fire"
+  },
+  "supported_items": "#minecraft:enchantable/bow",
+  "weight": 5,
+  "max_level": 3,
+  "min_cost": {
+    "base": 12,
+    "per_level_above_first": 20
+  },
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 8
+  },
+  "anvil_cost": 5,
+  "slots": [
+    "any"
+  ],
+  "exclusive_set": [],
+  "effects": {
+    "minecraft:crossbow_charge_time": {
+      "type": "minecraft:add",
+      "value": {
+        "type": "minecraft:linear",
+        "base": -0.25,
+        "per_level_above_first": -0.25
+      }
+    }
+  }
+}

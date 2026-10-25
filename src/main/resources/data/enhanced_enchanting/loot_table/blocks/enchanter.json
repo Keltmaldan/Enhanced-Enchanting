@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "enhanced_enchanting:blocks/enchanter",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "enhanced_enchanting:enchanter"
+        }
+      ]
+    }
+  ]
+}

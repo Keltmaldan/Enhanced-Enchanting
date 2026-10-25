@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "blockstate=1": {
+      "model": "enhanced_enchanting:block/lapis_lazuli_cauldron_0"
+    },
+    "blockstate=0": {
+      "model": "enhanced_enchanting:block/lapis_lazuli_cauldron"
+    }
+  }
+}
