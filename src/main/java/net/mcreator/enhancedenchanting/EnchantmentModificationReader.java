@@ -30,7 +30,7 @@ import javax.annotation.Nullable;
 //I consider an enchantment as a String in this file
 @EventBusSubscriber
 public class EnchantmentModificationReader {
-	private static final byte[] lastUpdate = {2,3,2,0}; //last update of the config system
+	@Deprecated private static final byte[] lastUpdate = {2,3,2,4}; //last update of the config system
 	private static final byte[] disable = {127,127,127,127}; //write it in .test to avoid the loading of the config files
 	private static final Path mainPath = FMLPaths.CONFIGDIR.get().resolve("enhanced_enchanting");
 	private static final Path testPath = mainPath.resolve(".test");
@@ -47,17 +47,11 @@ public class EnchantmentModificationReader {
 	public static Map<String, Integer> anvilCost;
 	@SubscribeEvent
 	public static void init(@Nullable FMLCommonSetupEvent event) throws IOException {
-		if (!Files.exists(testPath) || !Arrays.equals(Files.readAllBytes(testPath), lastUpdate)) {
-			for (Path path : pathList) {
-				Files.deleteIfExists(path);
-			}
-			Files.deleteIfExists(mainPath);
+		if (!Files.exists(mainPath))
 			Files.createDirectory(mainPath);
-			for (Path path : pathList) {
+		for (Path path : pathList) {
+			if (!Files.exists(path))
 				Files.createFile(path);
-			}
-			Files.setAttribute(testPath, "dos:hidden", true);
-			Files.write(testPath, lastUpdate);
 		}
 		if (Files.exists(testPath) && Arrays.equals(Files.readAllBytes(testPath), disable)) {
 			toRemove = List.of();
@@ -65,6 +59,9 @@ public class EnchantmentModificationReader {
 			weight = Map.of();
 			anvilCost = Map.of();
 			return;
+		} else if (!Files.exists(testPath) || !Arrays.equals(Files.readAllBytes(testPath), lastUpdate)) {
+			Files.setAttribute(testPath, "dos:hidden", true);
+			Files.write(testPath, lastUpdate);
 		}
 		
 		toRemove = ImmutableList.copyOf(Files.readAllLines(removePath));

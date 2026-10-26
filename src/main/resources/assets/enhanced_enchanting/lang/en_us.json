@@ -249,5 +249,6 @@
   "gamerule.removeEnchantingTableLimit": "RemoveEnchantingTableLimit",
   "gamerule.removeEnchantingTableLimit.description": "remove the enchanting table limit at 30",
   "enchantment.enhanced_enchanting.great_hunger": "Great Hunger",
-  "enchantment.enhanced_enchanting.small_stomach": "Small Stomach"
+  "enchantment.enhanced_enchanting.small_stomach": "Small Stomach",
+  "misc.enhanced_enchanting.help": "Find help in my discord server"
 }
