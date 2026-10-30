@@ -36,7 +36,7 @@ public class EnhancedEnchantingCommandCommand {
 
 			HelpCommandProcedure.execute(entity);
 			return 0;
-		})).then(Commands.literal("reload_config").executes(arguments -> {
+		})).then(Commands.literal("config").then(Commands.literal("reload").executes(arguments -> {
 			Level world = arguments.getSource().getUnsidedLevel();
 			double x = arguments.getSource().getPosition().x();
 			double y = arguments.getSource().getPosition().y();
@@ -50,7 +50,21 @@ public class EnhancedEnchantingCommandCommand {
 
 			ReloadConfigCommandProcedure.execute();
 			return 0;
-		})).then(Commands.literal("forbid").then(Commands.argument("enchant_id", StringArgumentType.word()).executes(arguments -> {
+		})).then(Commands.literal("open").executes(arguments -> {
+			Level world = arguments.getSource().getUnsidedLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null && world instanceof ServerLevel _servLevel)
+				entity = FakePlayerFactory.getMinecraft(_servLevel);
+			Direction direction = Direction.DOWN;
+			if (entity != null)
+				direction = entity.getDirection();
+
+			EditConfigCommandProcedure.execute(entity);
+			return 0;
+		}))).then(Commands.literal("forbid").then(Commands.argument("enchant_id", StringArgumentType.word()).executes(arguments -> {
 			Level world = arguments.getSource().getUnsidedLevel();
 			double x = arguments.getSource().getPosition().x();
 			double y = arguments.getSource().getPosition().y();
