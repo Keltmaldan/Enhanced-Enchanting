@@ -1,3 +1,8 @@
+/*
+    this file isn't used in the mod
+    it was intended to be in config/enhanced_enchanting but it was refused by CF
+    you can still download it to modify your config folder
+*/
 #include <iostream>
 #include <fstream>
 #include <string>
