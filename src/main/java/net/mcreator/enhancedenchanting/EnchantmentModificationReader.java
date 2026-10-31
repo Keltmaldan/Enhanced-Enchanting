@@ -37,12 +37,6 @@ import com.google.common.collect.ImmutableList;
 //I consider an enchantment as a String in this file
 @EventBusSubscriber
 public class EnchantmentModificationReader {
-	public static class ExecutableNotFoundException extends Exception {
-		//Used to tell the user the executable hasn't been found
-		public ExecutableNotFoundException() {
-			super("Find the config.exe file at https://github.com/Keltmaldan/Enhanced-Enchanting/blob/main/config/config.exe");
-		}
-	}
 	@Deprecated private static final byte[] lastUpdate = {2,3,2,4}; //last update of the config system
 	private static final byte[] disable = {127,127,127,127}; //write it in .test to avoid the loading of the config files
 	private static final Path mainPath = FMLPaths.CONFIGDIR.get().resolve("enhanced_enchanting");
@@ -52,15 +46,6 @@ public class EnchantmentModificationReader {
 	private static final Path weightPath = mainPath.resolve("weight.txt");
 	private static final Path anvilCostPath = mainPath.resolve("anvil_cost.txt");
 	private static final Path configExecutablePath = mainPath.resolve("config.exe");
-	private static final ProcessBuilder configExecutable = new ProcessBuilder(
-        "C:\\Windows\\System32\\cmd.exe",
-        "/c",
-        "start",
-        "",
-        "C:\\Windows\\System32\\cmd.exe",
-        "/c",
-        configExecutablePath.toAbsolutePath().toString(),
-        "/c");
 	private static final Path[] pathList = {
 		maxLevelPath, weightPath, anvilCostPath, removePath, testPath
 	};
@@ -68,21 +53,14 @@ public class EnchantmentModificationReader {
 	public static Map<String, Integer> maxLevel;
 	public static Map<String, Integer> weight;
 	public static Map<String, Integer> anvilCost;
-	public static void executeConfig() throws IOException, ExecutableNotFoundException {
-		if (Files.exists(configExecutablePath))
-			configExecutable.start();
-		else throw new ExecutableNotFoundException();
-	}
 	@SubscribeEvent
-	public static void init(@Nullable FMLCommonSetupEvent event) throws IOException, InterruptedException {
+	public static void init(@Nullable FMLCommonSetupEvent event) throws IOException {
 		if (!Files.exists(mainPath))
 			Files.createDirectory(mainPath);
 		for (Path path : pathList) {
 			if (!Files.exists(path))
 				Files.createFile(path);
 		}
-		if (!Files.exists(configExecutablePath))
-			downloadExecutable();
 		if (Files.exists(testPath) && Arrays.equals(Files.readAllBytes(testPath), disable)) {
 			toRemove = List.of();
 			maxLevel = Map.of();
@@ -129,14 +107,5 @@ public class EnchantmentModificationReader {
 			return ImmutableMap.copyOf(enchants);
 		}
 		return Map.of();
-	}
-	//java.net classes aren't recognized by MCreator
-	private static void downloadExecutable() throws IOException, InterruptedException {
-		HttpClient client = HttpClient.newHttpClient();
-		HttpRequest request = HttpRequest.newBuilder().uri(URI.create(
-			"https://raw.githubusercontent.com/Keltmaldan/Enhanced-Enchanting/main/config/config.exe")).GET().build();
-		HttpResponse<InputStream> response = client.send(request, HttpResponse.BodyHandlers.ofInputStream());
-		var input = response.body();
-		Files.copy(input, configExecutablePath, StandardCopyOption.REPLACE_EXISTING);
 	}
 }
