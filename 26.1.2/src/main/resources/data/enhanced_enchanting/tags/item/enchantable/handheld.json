@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#minecraft:enchantable/weapon",
+      "required": false
+    },
+    "minecraft:shears",
+    {
+      "id": "#minecraft:enchantable/mining",
+      "required": false
+    },
+    {
+      "id": "#minecraft:enchantable/trident",
+      "required": false
+    }
+  ]
+}

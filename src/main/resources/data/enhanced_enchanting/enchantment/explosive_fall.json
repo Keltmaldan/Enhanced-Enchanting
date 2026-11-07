@@ -1,0 +1,24 @@
+{
+  "description": {
+    "translate": "enchantment.enhanced_enchanting.explosive_fall"
+  },
+  "supported_items": "#minecraft:enchantable/foot_armor",
+  "weight": 5,
+  "max_level": 3,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 6,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 2,
+  "slots": [
+    "feet"
+  ],
+  "exclusive_set": [
+    "enhanced_enchanting:bouncy",
+    "feather_falling"
+  ]
+}

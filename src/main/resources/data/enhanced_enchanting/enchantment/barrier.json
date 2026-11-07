@@ -1,0 +1,35 @@
+{
+  "description": {
+    "translate": "enchantment.enhanced_enchanting.barrier"
+  },
+  "supported_items": "#minecraft:shield",
+  "weight": 10,
+  "max_level": 4,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 10,
+    "per_level_above_first": 15
+  },
+  "anvil_cost": 1,
+  "slots": [
+    "any"
+  ],
+  "exclusive_set": [],
+   "effects": {
+    "minecraft:attributes": [
+      {
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 1.0,
+          "per_level_above_first": 0.5
+        },
+        "attribute": "minecraft:generic.armor",
+        "id": "enhanced_enchanting:enchantment.barrier",
+        "operation": "add_value"
+      }
+    ]
+  }
+}

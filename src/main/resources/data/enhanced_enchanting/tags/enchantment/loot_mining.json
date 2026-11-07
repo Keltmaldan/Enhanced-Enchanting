@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "enhanced_enchanting:auto_smelt",
+    "silk_touch",
+    "enhanced_enchanting:big_hole",
+    "fortune"
+  ]
+}

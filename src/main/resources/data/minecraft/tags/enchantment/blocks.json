@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#minecraft:exclusive_set/mining",
+      "required": false
+    },
+    "enhanced_enchanting:stone_breaker"
+  ]
+}

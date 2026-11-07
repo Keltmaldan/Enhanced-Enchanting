@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "ccc",
+    "ddd"
+  ],
+  "key": {
+    "a": "minecraft:lapis_lazuli",
+    "b": "minecraft:diamond",
+    "c": "minecraft:lapis_block",
+    "d": "minecraft:nether_bricks"
+  },
+  "result": {
+    "id": "enhanced_enchanting:enchantment_remover",
+    "count": 1
+  }
+}

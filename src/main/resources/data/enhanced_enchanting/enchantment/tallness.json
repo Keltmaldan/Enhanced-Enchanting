@@ -1,0 +1,35 @@
+{
+  "description": {
+    "translate": "enchantment.enhanced_enchanting.tallness"
+  },
+  "supported_items": "#minecraft:enchantable/leg_armor",
+  "weight": 8,
+  "max_level": 4,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 6,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 2,
+  "slots": [
+    "legs"
+  ],
+  "exclusive_set": [],
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.05,
+          "per_level_above_first": 0.025
+        },
+        "attribute": "minecraft:generic.jump_strength",
+        "id": "enhanced_enchanting:enchantment.tallness",
+        "operation": "add_value"
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+package net.mcreator.enhancedenchanting.procedures;
+
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.network.chat.Component;
+import net.minecraft.commands.arguments.EntityArgument;
+import net.minecraft.commands.CommandSourceStack;
+
+import com.mojang.brigadier.exceptions.CommandSyntaxException;
+import com.mojang.brigadier.context.CommandContext;
+
+public class ExplosiveChickenCommandProcedure {
+	public static void execute(CommandContext<CommandSourceStack> arguments, Entity entity) {
+		if (entity == null)
+			return;
+		if ((commandParameterEntity(arguments, "entity")) instanceof Player) {
+			if (entity instanceof ServerPlayer _player)
+				_player.sendSystemMessage(Component.literal("\u00A7cInvalid argument"), false);
+			return;
+		}
+		(commandParameterEntity(arguments, "entity")).getPersistentData().putString("explosive_target", ((commandParameterEntity(arguments, "target")).getStringUUID()));
+	}
+
+	private static Entity commandParameterEntity(CommandContext<CommandSourceStack> arguments, String parameter) {
+		try {
+			return EntityArgument.getEntity(arguments, parameter);
+		} catch (CommandSyntaxException e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+}

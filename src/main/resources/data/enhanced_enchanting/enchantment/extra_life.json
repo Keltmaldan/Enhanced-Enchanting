@@ -1,0 +1,35 @@
+{
+  "description": {
+    "translate": "enchantment.enhanced_enchanting.extra_life"
+  },
+  "supported_items": "#minecraft:enchantable/armor",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 25,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 75,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 10,
+  "slots": [
+    "armor"
+  ],
+  "exclusive_set": [],
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 1.0,
+          "per_level_above_first": 1.0
+        },
+        "attribute": "minecraft:generic.max_health",
+        "id": "enhanced_enchanting:enchantment.extra_life",
+        "operation": "add_value"
+      }
+    ]
+  }
+}

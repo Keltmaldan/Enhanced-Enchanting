@@ -1,0 +1,21 @@
+{
+  "description": {
+    "translate": "enchantment.enhanced_enchanting.aerodynamism"
+  },
+  "supported_items": "#enhanced:elytras",
+  "weight": 5,
+  "max_level": 7,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 7
+  },
+  "max_cost": {
+    "base": 6,
+    "per_level_above_first": 7
+  },
+  "anvil_cost": 2,
+  "slots": [
+    "chest"
+  ],
+  "exclusive_set": []
+}

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "enderitemod:enderite_elytra",
+      "required": false
+    },
+    "minecraft:elytra"
+  ]
+}

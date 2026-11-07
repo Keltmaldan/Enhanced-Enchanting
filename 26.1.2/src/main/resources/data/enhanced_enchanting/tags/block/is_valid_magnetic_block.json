@@ -1,0 +1,34 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#minecraft:iron_ores",
+      "required": false
+    },
+    "minecraft:water_cauldron",
+    "minecraft:rail",
+    "minecraft:smithing_table",
+    "minecraft:blast_furnace",
+    "minecraft:heavy_weighted_pressure_plate",
+    "minecraft:anvil",
+    "minecraft:chipped_anvil",
+    "minecraft:powder_snow_cauldron",
+    "minecraft:damaged_anvil",
+    "minecraft:crafter",
+    "minecraft:lava_cauldron",
+    "minecraft:lantern",
+    "minecraft:iron_bars",
+    "minecraft:powered_rail",
+    "minecraft:lodestone",
+    "minecraft:iron_door",
+    "minecraft:iron_chain",
+    "minecraft:cauldron",
+    "minecraft:soul_lantern",
+    "minecraft:iron_trapdoor",
+    "minecraft:raw_iron_block",
+    "minecraft:iron_block",
+    "minecraft:hopper",
+    "minecraft:detector_rail",
+    "minecraft:activator_rail"
+  ]
+}

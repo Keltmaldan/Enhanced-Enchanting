@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:sculk_shrieker"
+  ],
+  "result": {
+    "id": "minecraft:echo_shard",
+    "count": 16
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "variants": {
+    "face=floor,facing=north": {
+      "model": "enhanced_enchanting:block/obsidian_grind_stone"
+    },
+    "face=floor,facing=east": {
+      "model": "enhanced_enchanting:block/obsidian_grind_stone",
+      "y": 90
+    },
+    "face=floor,facing=south": {
+      "model": "enhanced_enchanting:block/obsidian_grind_stone",
+      "y": 180
+    },
+    "face=floor,facing=west": {
+      "model": "enhanced_enchanting:block/obsidian_grind_stone",
+      "y": 270
+    },
+    "face=wall,facing=north": {
+      "model": "enhanced_enchanting:block/obsidian_grind_stone",
+      "x": 90
+    },
+    "face=wall,facing=east": {
+      "model": "enhanced_enchanting:block/obsidian_grind_stone",
+      "x": 90,
+      "y": 90
+    },
+    "face=wall,facing=south": {
+      "model": "enhanced_enchanting:block/obsidian_grind_stone",
+      "x": 90,
+      "y": 180
+    },
+    "face=wall,facing=west": {
+      "model": "enhanced_enchanting:block/obsidian_grind_stone",
+      "x": 90,
+      "y": 270
+    },
+    "face=ceiling,facing=north": {
+      "model": "enhanced_enchanting:block/obsidian_grind_stone",
+      "x": 180,
+      "y": 180
+    },
+    "face=ceiling,facing=east": {
+      "model": "enhanced_enchanting:block/obsidian_grind_stone",
+      "x": 180,
+      "y": 270
+    },
+    "face=ceiling,facing=south": {
+      "model": "enhanced_enchanting:block/obsidian_grind_stone",
+      "x": 180
+    },
+    "face=ceiling,facing=west": {
+      "model": "enhanced_enchanting:block/obsidian_grind_stone",
+      "x": 180,
+      "y": 90
+    }
+  }
+}

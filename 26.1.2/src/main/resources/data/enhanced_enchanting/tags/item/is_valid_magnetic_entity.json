@@ -1,0 +1,37 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#minecraft:iron_ores",
+      "required": false
+    },
+    "minecraft:iron_leggings",
+    "minecraft:iron_ingot",
+    "minecraft:chainmail_boots",
+    "minecraft:iron_pickaxe",
+    "minecraft:iron_spear",
+    "minecraft:iron_shovel",
+    "minecraft:chainmail_chestplate",
+    "minecraft:iron_bars",
+    "minecraft:chainmail_helmet",
+    "minecraft:iron_axe",
+    "minecraft:lodestone",
+    "minecraft:shears",
+    "minecraft:raw_iron",
+    "minecraft:iron_door",
+    "minecraft:iron_horse_armor",
+    "minecraft:iron_chain",
+    "minecraft:iron_hoe",
+    "minecraft:iron_boots",
+    "minecraft:iron_helmet",
+    "minecraft:iron_trapdoor",
+    "minecraft:chainmail_leggings",
+    "minecraft:raw_iron_block",
+    "minecraft:iron_chestplate",
+    "minecraft:iron_block",
+    "minecraft:flint_and_steel",
+    "minecraft:iron_sword",
+    "minecraft:iron_nautilus_armor",
+    "minecraft:iron_nugget"
+  ]
+}

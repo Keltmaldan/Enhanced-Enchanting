@@ -1,0 +1,12 @@
+{
+  "parent": "enhanced_enchanting:custom/enchanter",
+  "textures": {
+    "all": "enhanced_enchanting:block/enchanted_book",
+    "particle": "enhanced_enchanting:block/enchanted_book",
+    "0": "enhanced_enchanting:block/enchanter_top",
+    "1": "enhanced_enchanting:block/enchanter_side",
+    "3": "minecraft:block/obsidian",
+    "4": "enhanced_enchanting:block/enchanted_book"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:wind_charge",
+    {
+      "id": "#minecraft:enchantable/crossbow",
+      "required": false
+    },
+    {
+      "id": "#minecraft:enchantable/bow",
+      "required": false
+    },
+    "minecraft:snowball"
+  ]
+}

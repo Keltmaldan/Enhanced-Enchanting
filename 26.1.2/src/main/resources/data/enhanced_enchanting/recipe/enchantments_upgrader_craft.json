@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": "minecraft:netherite_ingot",
+    "b": "minecraft:crying_obsidian",
+    "c": "enhanced_enchanting:enchanter"
+  },
+  "result": {
+    "id": "enhanced_enchanting:enchantments_upgrader",
+    "count": 1
+  }
+}

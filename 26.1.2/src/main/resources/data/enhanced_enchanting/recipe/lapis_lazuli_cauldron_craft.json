@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "aba",
+    "ccc"
+  ],
+  "key": {
+    "a": "minecraft:lapis_lazuli",
+    "b": "minecraft:cauldron",
+    "c": "minecraft:lapis_block"
+  },
+  "result": {
+    "id": "enhanced_enchanting:lapis_lazuli_cauldron",
+    "count": 1
+  }
+}

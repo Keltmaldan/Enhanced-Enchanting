@@ -1,0 +1,21 @@
+{
+  "description": {
+    "translate": "enchantment.enhanced_enchanting.hunter"
+  },
+  "supported_items": "#minecraft:enchantable/sword",
+  "weight": 7,
+  "max_level": 4,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 6,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 1,
+  "slots": [
+    "mainhand"
+  ],
+  "exclusive_set": "#minecraft:exclusive_set/damage"
+}

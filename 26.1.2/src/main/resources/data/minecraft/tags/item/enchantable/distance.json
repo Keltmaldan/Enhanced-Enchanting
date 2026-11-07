@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:wind_charge",
+    {
+      "id": "#minecraft:enchantable/crossbow",
+      "required": false
+    },
+    "minecraft:trident",
+    {
+      "id": "#minecraft:enchantable/bow",
+      "required": false
+    },
+    "minecraft:snowball"
+  ]
+}

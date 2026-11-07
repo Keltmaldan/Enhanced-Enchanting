@@ -1,0 +1,21 @@
+{
+  "description": {
+    "translate": "enchantment.enhanced_enchanting.fire_essence"
+  },
+  "supported_items": "#minecraft:enchantable/durability",
+  "weight": 2,
+  "max_level": 1,
+  "min_cost": {
+    "base": 35,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 65,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 4,
+  "slots": [
+    "any"
+  ],
+  "exclusive_set": []
+}
